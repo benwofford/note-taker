@@ -37,5 +37,5 @@ const addNote = (note, cb) => {
 module.exports = {
     getAllNotes,
     addNote,
-    deleteNote
+    //deleteNote
 };
