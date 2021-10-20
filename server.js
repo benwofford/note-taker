@@ -9,31 +9,22 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-// TODO: pull info from public folder
-// app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public/')));
+// Connect to database
+const db = mysql.createConnection(
+    {
+      host: 'localhost',
+      user: 'root',
+      password: '',
+      database: 'movies_db'
+    },
+  );
 
-// TODO: take browser input, write onto db.json and store there
-// app.post('./public/assets/notes.html', (req, res) => {
-//     console.info(`${req.method} request received to add a note`);
-
-//     if (req.title && req.text) {
-//         response = {
-//           status: 'success',
-//           data: req.note,
-//         };
-//         res.json(`${response.data.note} has been added!`);
-//       } else {
-//         res.json('Title & text fields must be completely filled out.');
-//       }
-// });
-
-// TODO: 
 // HTML Routes
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/notes.html'));
 });
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
@@ -52,10 +43,10 @@ app.post('/api/notes', (req, res) => {
     });
 });
 
-app.delete('/api/notes/:id', (req, res) => {
-    // Delete a note based on it's id
-
-});
+// app.delete('/api/notes/:id', (req, res) => {
+//     // Delete a note based on it's id
+//     dbUtils.deleteNote(req.body, (id) => )
+// });
 
 app.listen(PORT, () =>
     console.log(`Serving static asset routes on port ${PORT}!`)
