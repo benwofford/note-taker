@@ -2,16 +2,13 @@
 
 This project's purpose is to create notes to organize a busy mind.
 
-You can access the github repository here: https://github.com/benwofford/note-taker
+Access the github repository here: https://github.com/benwofford/note-taker
 
 The heroku deployment can be found here: https://stark-hollows-89499.herokuapp.com/
-(This Heroku deployment is currently experiencing technical difficulties.)
-
-(As a backup until I can find the problem with Heroku, here is the deployment on Github pages: https://benwofford.github.io/note-taker/)
 
 ## Build Status ##
 
-Everything works except for the delete function. Still tweaking that.
+Complete. The user can add new notes, access previous notes and delete them if they so please.
 
 ## Screenshots ##
 
