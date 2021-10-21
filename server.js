@@ -33,10 +33,17 @@ app.post('/api/notes', (req, res) => {
     });
 });
 
-// app.delete('/api/notes/:id', (req, res) => {
-//     // Delete a note based on it's id
-//     dbUtils.deleteNote(req.body, (id) => )
-// });
+
+app.delete('/api/notes/:id', (req, res) => {
+    // Delete a note
+    dbUtils.deleteNote(req.params.id, (notes) => {
+      if (err) {
+        res.statusMessage(400).json({ error: res.message });
+      } else {
+        res.json(notes);
+      }
+    });
+  });
 
 app.listen(PORT, () =>
     console.log(`Server listening at Port ${PORT}.`)

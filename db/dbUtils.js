@@ -25,17 +25,17 @@ const addNote = (note, cb) => {
     });
 };
 
-// const deleteNote = (id, cb) => {
-//     getAllNotes(notes => {
-//       const filteredNotes = JSON.stringify(JSON.parse(notes).filter(note => note.id !== id));
-//       fs.writeFile('db/db.json', filteredNotes, (err) => {
-//         cb(filteredNotes);
-//       });
-//     });
-//   };
+const deleteNote = (id, cb) => {
+    getAllNotes(notes => {
+      const filteredNotes = JSON.stringify(JSON.parse(notes).filter(note => note.id !== id));
+      fs.writeFile('db/db.json', filteredNotes, (err) => {
+        cb(filteredNotes);
+      });
+    });
+  };
 
 module.exports = {
     getAllNotes,
     addNote,
-    //deleteNote
+    deleteNote
 };
