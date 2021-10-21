@@ -36,9 +36,9 @@ app.post('/api/notes', (req, res) => {
 
 app.delete('/api/notes/:id', (req, res) => {
     // Delete a note
-    dbUtils.deleteNote(req.params.id, (notes) => {
+    dbUtils.deleteNote(req.params.id, (err, notes) => {
       if (err) {
-        res.statusMessage(400).json({ error: res.message });
+        res.statusMessage(400).json({ error: err });
       } else {
         res.json(notes);
       }
