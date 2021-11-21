@@ -2,6 +2,8 @@
 
 This project's purpose is to give the user a platform to create notes to organize a busy mind 🗒️
 
+The deployment can be found [here](https://stark-hollows-89499.herokuapp.com/)
+
 ## Table of Contents
 
 - [Screenshots ](#Screenshots)
@@ -24,7 +26,6 @@ The user can add notes and delete them.
 ## Repository
 
 - [Github](https://github.com/benwofford/note-taker)
-- [Heroku] (https://stark-hollows-89499.herokuapp.com/)
 
 ## License
 
