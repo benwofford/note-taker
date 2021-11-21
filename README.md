@@ -1,16 +1,15 @@
-# Note Taker Application#
+# Portfolio Page
 
-This project's purpose is to create notes to organize a busy mind.
+This project's purpose is to give the user a platform to create notes to organize a busy mind 🗒️
 
-Access the github repository here: https://github.com/benwofford/note-taker
+## Table of Contents
 
-The heroku deployment can be found here: https://stark-hollows-89499.herokuapp.com/
+- [Screenshots ](#Screenshots)
+- [Features](#Features)
+- [Repository Link](#Repository)
+- [Questions](#Questions)
 
-## Build Status ##
-
-Complete. The user can add new notes, access previous notes and delete them if they so please.
-
-## Screenshots ##
+## Screenshots
 
 ![alt=landing page of note taker](./images/note-taker-main.png)
 
@@ -18,29 +17,41 @@ Complete. The user can add new notes, access previous notes and delete them if t
 
 ![alt=showing the save function saving the previous note](./images/save-test.png)
 
-## Features ##
+## Features
 
---
+The user can add notes and delete them.
 
-## Code Example ##
+## Repository
 
---
+- [Github](https://github.com/benwofford/note-taker)
+- [Heroku] (https://stark-hollows-89499.herokuapp.com/)
 
-## Installation ##
+## License
 
---
-## How To Use ##
+MIT License
 
---
+Copyright (c) 2021 Ben Wofford
 
-## Contribute ##
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
---
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-## Credits ##
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
---
+## Questions
 
-## License ##
+For any questions regarding this project, please reach out via email:
 
---
+ben.wofford@hey.com
