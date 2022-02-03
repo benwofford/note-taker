@@ -55,4 +55,4 @@ SOFTWARE.
 
 For any questions regarding this project, please reach out via email:
 
-ben.wofford@hey.com
+benwofforddev@gmail.com
